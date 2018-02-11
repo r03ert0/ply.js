@@ -1,0 +1,24 @@
+{
+  "name": "ply.js",
+  "version": "0.0.1",
+  "description": "A reader and writer of PLY meshes",
+  "main": "ply.js",
+  "scripts": {
+    "test": "mocha ply-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://r03ert0@github.com/r03ert0/ply.js.git"
+  },
+  "keywords": [
+    "mesh",
+    "reader",
+    "writer"
+  ],
+  "author": "Roberto Toro <rto@braincatalogue.org> (http://neuroanatomy.github.io)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/r03ert0/ply.js/issues"
+  },
+  "homepage": "https://github.com/r03ert0/ply.js#readme"
+}
