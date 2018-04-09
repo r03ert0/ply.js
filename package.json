@@ -4,7 +4,8 @@
   "description": "A reader and writer of PLY meshes",
   "main": "ply.js",
   "scripts": {
-    "test": "mocha ply-test.js"
+    "test": "mocha ply-test.js",
+    "build-browser": "browserify main.js -o ./dist/browser.ply.js;cp ./dist/browser.ply.js ./examples/"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,16 @@
+<html>
+<script src="browser.ply.js"></script>
+<script>
+var XHR = new XMLHttpRequest();
+XHR.open("GET", "icosahedron.ply", true);
+XHR.send();
+XHR.onload = function (){
+    const mesh = PLY.parsePLY(XHR.responseText);
+    document.body.innerHTML = `
+<p>Read PLY file</p>
+<b>vertices:</b> ${mesh.p.length}</br>
+<b>triangles:</b> ${mesh.t.length}</br>
+`;
+};
+</script>
+</html>

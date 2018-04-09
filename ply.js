@@ -2,7 +2,7 @@ const fs = require('fs');
 const zlib = require('zlib');
 
 
-function parsePLY(str) {
+var parsePLY = function parsePLY(str) {
 /*
     console.log(str.split('\n').slice(0,20).join('\n'));
 */
@@ -42,7 +42,7 @@ function parsePLY(str) {
     return {p: p, t: t};
 }
 
-function encodePLY(mesh) {
+var encodePLY = function encodePLY(mesh) {
     let plystr =
 `ply
 format ascii 1.0
@@ -107,3 +107,6 @@ exports.savePLYGz = function savePLYGz(mesh, path) {
 
     return pr;
 }
+exports.parsePLY = parsePLY;
+exports.encodePLY = encodePLY;
+
