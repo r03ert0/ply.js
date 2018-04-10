@@ -56,6 +56,7 @@ property list uchar int vertex_indices
 end_header
 `;
     plystr += mesh.p.map((o) => o.join(' ')).join('\n');
+    plystr += '\n';
     plystr += mesh.t.map((o) => '3 ' + o.join(' ')).join('\n');
 
     return plystr;
